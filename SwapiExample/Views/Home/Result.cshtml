@@ -1,0 +1,16 @@
+﻿@model Person
+
+
+@* Views do not care about where the model comes from.
+    A model is a model.*@
+<h2>Info on @Model.name</h2>
+
+<p>Gender: @Model.gender</p>
+<p>Home Planet: @Model.homeworld</p>
+<p>Height: @Model.height</p>
+
+<h3>Films</h3>
+@foreach(string film in Model.films)
+            {
+    <p>@film</p>
+            }
